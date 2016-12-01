@@ -31,6 +31,7 @@ function doAThing() {
   var type = rules.challenges[pick].type;
   which.textContent = rules.challenges[pick].name;
 
+  // Maybe it's a mad lib thing.
   if (type) {
     var replacement = '';
 
@@ -42,6 +43,7 @@ function doAThing() {
     replacement = replacement.substring(0, replacement.length - 2);
     description = description.replace('{}', replacement);
   }
+  
   what.textContent = description;
 }
 
