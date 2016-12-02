@@ -21,6 +21,44 @@ var rules = {
     { name: 'Red Light Special', description: 'You can only use items on sale'},
     { name: 'Un-gredient List', description: 'You are not allowed to include anything from the {} category in your present.', count: 1, type: 'categories'},
     { name: 'Alphabet Soup', description: 'You can only buy items that start with the letter: {}', count: 1, type: 'letters'},
+    { name: 'Unpresidential',
+      description: "Go check Donald Trump's Twitter feed. Yeah, it's gross, \
+        but this is a competition, dammit, and sometimes you gotta make sacrifices. \
+        Count up every tweet he's made today, and you must find a product that \
+        contains that number of items. For example, if that babbling cesspool \
+        manages to type seven whiny factless tweets this morning at 3am, then \
+        you must find a package of, say, seven donuts. Or seven markers. Or \
+        seven something. If he hasn't tweeted at all yet today, take a deep \
+        breath, thank the odd circumstances that brought you here, and instead \
+        you must find something that comes in a package of two."
+    },
+    { name: 'Tubular!',
+      description: "Far out, dude! Totally rad, because you're gonna have to buy \
+        something that comes in a tube. It can be anything, as long as the \
+        packaging is (or vaguely resembles) a cylinder."
+    },
+    { name: 'Her Royal Highness',
+      description: "Tally ho! 🇬🇧 Take the lift to the lorry and have some digestives \
+        during high tea while rooting for your favorite footy club! (Are the Brits \
+        reading this mad at us yet?) Anyway, you have to buy a product of England \
+        in this challenge. Everything's fair game, as long as it was made in \
+        England."
+    },
+    { name: 'I HAVE THE POWERRR⚡️',
+      description: "Isn't it neat that we live in the modern era, with pizza \
+        delivery and Real World/Road Rules Challenge and MySpace? Take some time \
+        to appreciate how nifty electricity is by gifting something that makes \
+        direct use of power."
+    },
+    { name: 'The Name Game',
+      description: "Shirley! Shirley, Shirley / Bo-ber-ley, bo-na-na fanna / \
+        Fo-fer-ley. fee fi mo-mer-ley, Shirley! In this name game you need to \
+        count up the number of letters in your gift recipient's name and buy \
+        them something that has the exact amount of letters. So, in this case, \
+        \"Shirley\" means you'd buy something like \"bananas\" (ironically \
+        enough), \"seafood\", or \"napkins\". (Don't get them napkins, though,\
+        unless they're really cute napkins. Otherwise you'd be boring.)"
+    }
   ]
 }
 
@@ -43,7 +81,7 @@ function doAThing() {
     replacement = replacement.substring(0, replacement.length - 2);
     description = description.replace('{}', replacement);
   }
-  
+
   what.textContent = description;
 }
 
