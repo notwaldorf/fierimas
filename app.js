@@ -64,8 +64,15 @@ var rules = {
   ]
 }
 
-function doAThing() {
-  var pick = pickIndex(rules.challenges);
+function doAThing(whichThing) {
+  var pick;
+
+  if (whichThing){
+    pick = whichThing;
+  } else {
+    pick = pickIndex(rules.challenges);
+    window.location.hash = '#' + pick;
+  }
 
   var description = rules.challenges[pick].description;
   var type = rules.challenges[pick].type;

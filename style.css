@@ -68,13 +68,13 @@ a:hover {
 
 .top {
   background: white;
-  padding: 20px 40px;
+  padding: 20px 30px;
 }
 
 .bottom {
   background: #E8392E;
   color: white;
-  padding: 20px 40px;
+  padding: 20px 30px;
 }
 
 @media (max-width: 500px) {
@@ -87,9 +87,29 @@ a:hover {
   }
 }
 
-
 footer {
   color: #E8392E;
   text-align: center;
   font-size: 14px;
+}
+
+button {
+  border: none;
+  background: transparent;
+  box-shadow: none;
+  color: white;
+  cursor: pointer;
+  fill: white;
+  stroke: transparent;
+  box-sizing: border-box;
+  border-radius: 50%;
+  padding: 4px;
+  height: 30px;
+  width: 30px;
+}
+
+button:hover {
+  background: rgba(255, 255, 255, 0.5);
+  fill: #E8392E;
+  stroke: #E8392E;
 }
