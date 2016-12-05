@@ -5,6 +5,8 @@ body {
   padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .snow {
@@ -13,11 +15,6 @@ body {
   left: 0;
   pointer-events: none;
   z-index: -1;
-}
-
-p {
-  font-size: 16px;
-  line-height: 1.5;
 }
 
 h2 {
@@ -69,13 +66,6 @@ a:hover {
     0 11px 15px -7px rgba(0, 0, 0, 0.4);
 }
 
-@media (max-width: 500px) {
-  .container, footer {
-    max-width: 100%;
-    margin: 40px;
-  }
-}
-
 .top {
   background: white;
   padding: 20px 40px;
@@ -87,7 +77,19 @@ a:hover {
   padding: 20px 40px;
 }
 
+@media (max-width: 500px) {
+  .container, footer {
+    max-width: 100%;
+    margin: 20px;
+  }
+  .top, .bottom {
+    padding: 20px;
+  }
+}
+
+
 footer {
   color: #E8392E;
   text-align: center;
+  font-size: 14px;
 }
