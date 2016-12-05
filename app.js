@@ -8,24 +8,25 @@ var rules = {
   items: [2, 3, 4, 5],
   letters: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split(''),
   challenges: [
-    { name: 'Aisle Down', description: 'Can’t buy anything from category: {}.', count: 3, type: 'categories'},
+    { name: 'Category Down', description: 'Can’t buy anything from category: {}.', count: 3, type: 'categories'},
     { name: 'Budget Battle', description: 'Limited amount of money. You can only spend up to ${}. You can use coupons.', count: 1, type: 'prices'},
-    { name: 'Cart/Station Swap', description: 'You can only buy something you saw in someone else’s cart.'},
+    { name: 'Cart Swap', description: 'You can only buy something you already saw in someone else’s cart.'},
     { name: 'Express Lane', description: 'You can\'t buy more than {} items and you have to wait in the express lane when you buy them.', count: 1, type: 'items'},
-    { name: 'Flip This Dish', description: 'You need to incorporate {} into your present.', count: 1, type: 'words'},
-    { name: 'Grocery List', description: 'You need to incorporate these 3 items in your present: {}.', count: 3, type: 'words'},
+    { name: 'Flip This Present', description: 'You need to incorporate {} into your present.', count: 1, type: 'words'},
+    { name: 'Item List', description: 'You need to incorporate these 3 items in your present: {}.', count: 3, type: 'words'},
     { name: 'Keep It Sample', description: 'You can only use things that you find in the sample displays of the store.'},
     { name: 'Musical Carts', description: 'Walk around aisles until the song that is currently playing stops. Whatever aisle you’re left on is the one you have to buy items from.'},
-    { name: 'No Carts Allowed', description: 'You can’t use a cart, you must carry your items around the store'},
-    { name: 'One Ingredient Per Aisle', description: 'You can only use items from these categories, one max per category: {}.', count: 3, type: 'categories'},
-    { name: 'Red Light Special', description: 'You can only use items on sale'},
+    { name: 'No Carts Allowed', description: 'You can’t use a cart, you must carry your items around the store.'},
+    { name: 'One Ingredient Per Category', description: 'You can only use items from these categories, one max per category: {}.', count: 3, type: 'categories'},
+    { name: 'Red Light Special', description: 'You can only use items on sale.'},
     { name: 'Un-gredient List', description: 'You are not allowed to include anything from the {} category in your present.', count: 1, type: 'categories'},
     { name: 'Alphabet Soup', description: 'You can only buy items that start with the letter: {}.', count: 1, type: 'letters'},
     { name: 'Unpresidential',
       description: "Go check Donald Trump's Twitter feed. Yeah, it's gross, \
         but this is a competition, dammit, and sometimes you gotta make sacrifices. \
         Count up every tweet he's made today, and you must find a product that \
-        contains that number of items. For example, if that babbling cesspool \
+        contains that number of items. <br><br> \
+        For example, if that babbling cesspool \
         manages to type seven whiny factless tweets this morning at 3am, then \
         you must find a package of, say, seven donuts. Or seven markers. Or \
         seven something. If he hasn't tweeted at all yet today, take a deep \
@@ -52,7 +53,8 @@ var rules = {
     },
     { name: 'The Name Game',
       description: "Shirley! Shirley, Shirley / Bo-ber-ley, bo-na-na fanna / \
-        Fo-fer-ley. fee fi mo-mer-ley, Shirley! \n In this name game you need to \
+        Fo-fer-ley. fee fi mo-mer-ley, Shirley! <br><br> \
+        In this name game you need to \
         count up the number of letters in your gift recipient's name and buy \
         them something that has the exact amount of letters. So, in this case, \
         \"Shirley\" means you'd buy something like \"bananas\" (ironically \
