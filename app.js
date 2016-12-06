@@ -71,7 +71,7 @@ function doAThing(whichThing) {
     pick = whichThing;
   } else {
     pick = pickIndex(rules.challenges);
-    window.location.hash = '#' + pick;
+    which.href = '#' + pick;
   }
 
   var description = rules.challenges[pick].description;
