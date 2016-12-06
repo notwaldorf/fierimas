@@ -69,12 +69,12 @@ a {
   cursor: pointer;
 }
 
-footer a {
+footer a:link, footer a:visited {
   color: #E8392E;
   border-bottom: 2px solid #E8392E;
 }
 
-.bottom a {
+.bottom a:link, .bottom a:visited {
   color: white;
   border-bottom: 2px solid white;
 }
@@ -100,7 +100,7 @@ footer a:after {
   background: white;
 }
 
-a:hover::after {
+a:hover:after {
   transform: scaleY(1);
 }
 
