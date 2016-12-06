@@ -3,7 +3,7 @@ var rules = {
                'Beauty', 'Books', 'Music', 'Clothing', 'Jewellery', 'Art', 'Electronics',
                'Furniture', 'Kitchen', 'Kindle', 'Office products', 'Musical Instruments',
                'Sports', 'Pet Supplies', 'Tools', 'Toys', 'Booze'],
-  words: ['cheese', 'Star Wars', 'Star Trek', 'cats'],
+  words: ['cheese', 'Star Wars', 'Star Trek', 'cats', 'dogs', 'office equipment', 'pizza'],
   prices: ['5.99', '9.99'],
   items: [2, 3, 4, 5],
   letters: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split(''),
