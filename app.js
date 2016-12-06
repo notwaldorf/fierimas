@@ -71,12 +71,12 @@ function doAThing(whichThing) {
     pick = whichThing;
   } else {
     pick = pickIndex(rules.challenges);
-    which.href = '#' + pick;
   }
 
   var description = rules.challenges[pick].description;
   var type = rules.challenges[pick].type;
   which.textContent = rules.challenges[pick].name;
+  which.href = '#' + pick;
 
   // Maybe it's a mad lib thing.
   if (type) {
