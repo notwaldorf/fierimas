@@ -16,7 +16,7 @@ var rules = {
     { name: 'Item List', description: 'You need to incorporate these 3 items in your present: {}.', count: 3, type: 'words'},
     { name: 'Keep It Sample', description: 'You can only use things that you find in the sample displays of the store.'},
     { name: 'Musical Carts', description: 'Walk around aisles until the song that is currently playing stops. Whatever aisle you’re left on is the one you have to buy items from.'},
-    { name: 'No Carts Allowed', description: 'You can’t use a cart, you must carry your items around the store.'},
+    { name: 'No Carts Allowed', description: 'You can’t use a cart; you must carry your items around the store.'},
     { name: 'One Ingredient Per Category', description: 'You can only use items from these categories, one max per category: {}.', count: 3, type: 'categories'},
     { name: 'Red Light Special', description: 'You can only use items on sale.'},
     { name: 'Un-gredient List', description: 'You are not allowed to include anything from the {} category in your present.', count: 1, type: 'categories'},
